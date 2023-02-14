@@ -42,7 +42,7 @@ def textbox(text, box="AI", name="Robot"):
         style["margin-right"] = "auto"
 
         thumbnail = html.Img(
-            src=app.get_asset_url("data_amber.png"),
+            src=app.get_asset_url("data_amber.jpg"),
             style={
                 "border-radius": 50,
                 "height": 36,
