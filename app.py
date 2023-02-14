@@ -21,7 +21,7 @@ def Header(name, app):
     return dbc.Row([dbc.Col(title, md=8), dbc.Col(logo, md=4)])
 
 
-def textbox(text, box="AI", name="DataAmber"):
+def textbox(text, box="AI", name="Robot"):
     text = text.replace(f"{name}:", "").replace("You:", "")
     style = {
         "max-width": "60%",
@@ -106,7 +106,7 @@ controls = dbc.InputGroup(
 app.layout = dbc.Container(
     fluid=False,
     children=[
-        Header("Dash ChatGPT- DataAmber", app),
+        Header("ChatGPT GPT3 API", app),
         html.Hr(),
         dcc.Store(id="store-conversation", data=""),
         conversation,
@@ -125,7 +125,7 @@ def run_chatbot(n_clicks, n_submit, user_input, chat_history):
     if user_input is None or user_input == "":
         raise PreventUpdate
     else:
-        name = "DataAmber"
+        name = "Robot"
         # First add the user input to the chat history
         chat_history += f"You: {user_input}<split>{name}:"
         model_input = chat_history.replace("<split>", "\n")
