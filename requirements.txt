@@ -1,4 +1,3 @@
-textwrap
-dash
-dash_auth
-openai
+dash==2.8.1
+dash_auth==1.3.2
+openai==0.26.5
