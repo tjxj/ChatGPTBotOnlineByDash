@@ -42,7 +42,7 @@ def textbox(text, box="AI", name="Robot"):
         style["margin-right"] = "auto"
 
         thumbnail = html.Img(
-            src=app.get_asset_url("data_amber.jpg"),
+            src=app.get_asset_url("data_amber.png"),
             style={
                 "border-radius": 50,
                 "height": 36,
@@ -106,7 +106,7 @@ controls = dbc.InputGroup(
 app.layout = dbc.Container(
     fluid=False,
     children=[
-        Header("ChatGPT GPT3 API", app),
+        Header("ChatGPT Bot", app),
         html.Hr(),
         dcc.Store(id="store-conversation", data=""),
         conversation,
