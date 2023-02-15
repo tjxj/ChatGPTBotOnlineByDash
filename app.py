@@ -132,7 +132,7 @@ def run_chatbot(n_clicks, n_submit, user_input, chat_history):
         response = openai.Completion.create(
             engine="text-davinci-003",
             prompt=model_input,
-            max_tokens=250,
+            max_tokens=500,
             temperature=0.6,
         )
         model_output = response.choices[0].text + '<split>'
