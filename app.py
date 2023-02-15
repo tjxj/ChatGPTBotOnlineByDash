@@ -64,7 +64,7 @@ description = """
 
 # Authentication
 
-openai.api_key = "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"
+openai.api_key = "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"
 
 # Define app
 
